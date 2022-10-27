@@ -45,8 +45,13 @@ function showSlides(n) {
 }
 /* function for ep1 */
 function hide(){
+  
+  document.getElementById('background').style.display="none";
+  
   document.getElementById('hide').style.display="block";
 }
 function hideagain(){
+  
+  document.getElementById('background').style.display="block";
   document.getElementById('hide').style.display="none";
 }
