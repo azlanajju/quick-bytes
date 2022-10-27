@@ -232,6 +232,7 @@ img {
 
 /* Slideshow container */
 .slideshow-container {
+  animation: open 0.3s linear;
   display: none; 
   top:200px;
   margin: 20px;
@@ -250,7 +251,7 @@ img {
   top: 0%;
   width: auto;
   padding: 16px;
-  background: rgba(255, 255, 255, 0.05);
+  background-color: rgba(0, 0, 0, 0.02);
   color: white;
   font-weight: bold;
   font-size: 18px;
@@ -277,7 +278,8 @@ img {
 /* On hover */
 .prev:hover,
 .next:hover {
-  background-color: rgba(0, 0, 0, 0.1);
+   background: rgba(255, 255, 255, 0.02);
+ 
 }
 
 /* Caption text */
@@ -362,7 +364,7 @@ margin-top: 130px;
   position: absolute;
   right:0;
   margin-top: -35px;
-  background: rgba(0, 0, 0, 0.1);
+  background: rgba(0, 0, 0, 0.01);
   border:none;
   font-size: 30px;
   
@@ -370,8 +372,28 @@ margin-top: 130px;
 }
 .blur{
   display: none;
-  background: rgba(143, 222, 92, 0.3);
+  
+  background-image:url('/images/background.jpg');
+  background-size: cover;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   top: 0;
+  animation: background 0.25s linear;
+}
+@keyframes open{
+  from{
+    top:100%;
+  }
+  to{
+    top:200px;
+  }
+}
+
+@keyframes background{
+  from{
+    margin-top:100%;
+  }
+  to{
+ margin-top:0;
+  }
 }
