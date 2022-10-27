@@ -238,6 +238,8 @@ img {
   max-width: 100%;
   position: absolute;
   
+  
+  
 }
 
 /* Next & previous buttons */
@@ -367,6 +369,7 @@ margin-top: 130px;
   
 }
 .blur{
+  display: none;
   background: rgba(143, 222, 92, 0.3);
   height: 100vh;
   width: 100vw;
