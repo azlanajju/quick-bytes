@@ -232,6 +232,7 @@ img {
 
 /* Slideshow container */
 .slideshow-container {
+  z-index: 1;
   animation: open 0.3s linear;
   display: none; 
   top:200px;
@@ -346,11 +347,18 @@ img {
     font-size: 11px
   }
 }
-.thumbanil{
+.thumbnail{
   
+  margin-top:130x; 
+}
+.thumbnailblur{
+  
+  background: rgba(0, 0, 0, 0.1);
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
 margin-top: 130px;
 }
-.thumbanil img{
+.thumbnail img{
   border-radius: 5px;
   border:2px solid white;
   box-shadow: 4px 4px rgba(255, 255, 255,0.3);
@@ -371,14 +379,14 @@ margin-top: 130px;
   
 }
 .blur{
-  display: none;
   
-  background-image:url('/images/background.jpg');
-  background-size: cover;
-  height: 100vh;
-  width: 100%;
-  top: 0;
-  animation: background 0.25s linear;
+ /*
+  
+  background: rgba(0, 0, 0, 0.1);
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+  */
+  
 }
 @keyframes open{
   from{
@@ -391,9 +399,9 @@ margin-top: 130px;
 
 @keyframes background{
   from{
-    margin-top:100%;
+    margin-top:0;
   }
   to{
- margin-top:0;
+ margin-top:100%;
   }
 }
