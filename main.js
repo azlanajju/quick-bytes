@@ -1,3 +1,4 @@
+alert('UNDER MAINTENANCE');
   const body = document.querySelector("body");
     const navbar = document.querySelector(".navbar");
     const menuBtn = document.querySelector(".menu-btn");
