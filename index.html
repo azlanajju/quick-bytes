@@ -41,8 +41,7 @@
         <li><a href="index.html" style="font-weight:bold;color:#4AD704;">GLUG PACE</a></li>
         <li><a href="">about</a></li>
         <li><a href="#">feedback</a></li>
-
-        <li><a href="#">Contact</a></li>
+<li><a href="#">Contact</a></li>
       </ul>
       <div id="button" class="icon menu-btn">
         <i class="fa fa-bars"></i>
@@ -59,14 +58,15 @@
     
   
     <!--    thumbnails section    -->
-  <div id="background" class="thumbnail">
-    <img onclick="hide()" height="150" src="/images/quickby6 ep1/Quick Bytes  E01_1.jpg" alt="">
-    <img height="150" src="/images/quickby6 ep1/Quick Bytes  E01_1.jpg" alt="">
-    <img height="150" src="/images/quickby6 ep1/Quick Bytes  E01_1.jpg" alt="">
+  <div id="background" class="thumbnail">   <!--       
+    <h1 style="color:white;position: relative;margin:auto;left:50%;">2022</h1>      -->
+    <img onclick="hide1()" height="150" src="/images/quickby6 ep1/Quick Bytes  E01_1.jpg" alt="">
+    <img onclick="hide2()"  height="150" src="/images/testing /1_20221023_130717_0000.png" alt="">
+    <img onclick="hide3()"  class="locked"  height="150" src="/images/quickby6 ep1/Quick Bytes  E01_1.jpg" alt="">
     
-    <img height="150" src="/images/quickby6 ep1/Quick Bytes  E01_1.jpg" alt="">
-    <img height="150" src="/images/quickby6 ep1/Quick Bytes  E01_1.jpg" alt="">
-    <img height="150" src="/images/quickby6 ep1/Quick Bytes  E01_1.jpg" alt="">
+    <img onclick="hide4()" height="150" src="/images/quickby6 ep1/Quick Bytes  E01_1.jpg" alt="">
+    <img onclick="hide5()"  height="150" src="/images/quickby6 ep1/Quick Bytes  E01_1.jpg" alt="">
+    <img onclick="hide6()"  height="150" src="/images/quickby6 ep1/Quick Bytes  E01_1.jpg" alt="">
     
     <img height="150" src="/images/quickby6 ep1/Quick Bytes  E01_1.jpg" alt="">
     <img height="140" src="/images/quickby6 ep1/Quick Bytes  E01_1.jpg" alt="">
@@ -84,11 +84,11 @@
   <!--   slider section     -->
   <!--   slide episode 1     -->
  
-   <div id="blur" class="blur">
+   <div id="blur1" class="blur">
  
-  <div id="hide" class="slideshow-container">
+  <div id="hide1" class="slideshow-container">
     <div class="cancel">
-      <button onclick="hideagain()" type="submit">
+      <button onclick="hideagain1()" type="submit">
       <i class="fa fa-close"></i></button>
     </div>
     <!--    img1   -->
@@ -128,7 +128,7 @@
     </div>
 
 
-    <!--       previous, next -->
+    <!--       previous, next button-->
 
     <a class="prev" onclick="plusSlides(-1)">
 <i class="material-icons">chevron_left</i>
@@ -138,20 +138,57 @@
 </a>
 
   </div>
-  <br>
-  <!--   dots     --> <!--
-  <div style="text-align:center">
-    <span class="dot" onclick="currentSlide(1)"></span>
-    <span class="dot" onclick="currentSlide(2)"></span>
-    <span class="dot" onclick="currentSlide(3)"></span>
-    <span class="dot" onclick="currentSlide(4)"></span>
-    <span class="dot" onclick="currentSlide(5)"></span>
-    <span class="dot" onclick="currentSlide(6)"></span>
-  </div> -->
-</ppdiv>
+  </div>
     <!--     slider episode 2   -->
 
+   <div id="blur2" class="blur">
+ 
+  <div id="hide2" class="slideshow-container">
+    <div class="cancel">
+      <button onclick="hideagain2()" type="submit">
+      <i class="fa fa-close"></i></button>
+    </div>
+    <!--    img1   -->
+    <div class="mySlides2 fade">
+      
+      <img src="/images/testing /1_20221023_130717_0000.png" style="width:100%">
 
+    </div>
+    <br>
+    <!--     img2   -->
+    <div class="mySlides2 fade">
+      
+      <img src="/images/quickby6 ep1/Quick Bytes  E01_2.jpg" style="width:100%">
+
+    </div>
+    <!--    img3    -->
+    <div class="mySlides2 fade">
+      
+      <img src="/images/quickby6 ep1/Quick Bytes  E01_3.jpg" style="width:100%">
+
+    </div>
+    <br>
+    <!--    img4    -->
+    <div class="mySlides2 fade">
+      
+      <img src="/images/quickby6 ep1/Quick Bytes  E01_4.jpg" style="width:100%">
+
+    </div>
+    <!--   img5    -->
+    <div class="mySlides2 fade">
+     
+      <img src="/images/quickby6 ep1/Quick Bytes  E01_5.jpg" style="width:100%">
+    </div>
+    <!--     img6  -->
+    <div class="mySlides2 fade">
+    
+      <img src="/images/quickby6 ep1/Quick Bytes  E01_6.jpg" style="width:100%">
+
+    </div>
+</div>
+  </div>
+  
+  <!--    slider episode 3   -->
   <script src="main.js">
     main.js
   </script>
