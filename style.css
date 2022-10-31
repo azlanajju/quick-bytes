@@ -26,7 +26,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: red;
+  background: var(--greenred);
 }
 
 ::selection {
@@ -365,6 +365,7 @@ img {
 margin-top: 130px;
 }
 .thumbnail img{
+
   border-radius: 5px;
   border:2px solid white;
   box-shadow: 4px 4px rgba(255, 255, 255,0.3);
@@ -504,3 +505,28 @@ input:checked + .slider:before {
     
   }
  
+@media screen and (min-width:610px) {
+  .thumbnail{
+    margin-left: 10px;
+  }
+  .thumbnail img{
+
+    width:170px;
+  }
+  
+}
+@media screen and (min-width:500px) {
+  .thumbnail img{
+    border: 2px solid green;
+   
+    width:140px;
+  }
+}
+@media screen and (min-width:1200px) {
+  
+  .thumbnail img{
+    border: 2px solid purple;
+   
+    width:140px;
+  }
+}
