@@ -530,3 +530,33 @@ input:checked + .slider:before {
     width:140px;
   }
 }
+
+@media screen and (min-width:1200px) {
+  
+  .thumbnail img{
+    border: 2px solid purple;
+   
+    width:200px;
+    height: 200px;
+  }
+  .slideshow-container{
+    z-index: 1;
+    animation: open 0.3s linear;
+    display: none; 
+    top:20px;
+    left: 22.5%;
+    margin: 50px;
+    max-width: 45%;
+    position: absolute;
+    
+    
+   }
+   .scrollup a{
+    display: none;
+   }
+   .navbar .menu-list {
+    
+    max-width:40%;
+   
+  }
+  
