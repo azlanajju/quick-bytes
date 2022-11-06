@@ -8,10 +8,11 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
+  transition: 0.8s;
 }
 
 body {
-  
+
   background: black;
   
 }
@@ -196,20 +197,6 @@ body.disabled {
     width: 10%;
 
   }
-
-/*
-  50% {
-
-    left: 0%;
-    width: 60%;
-  }/*
-
-  75% {
-
-    left: 100%;
-    width: 100%;
-  }
-  */
   100%{
     
     left: 0%;
@@ -228,37 +215,29 @@ body.disabled {
   }
 }
 
-.mySlides2 img{
-  margin-bottom:10px;
-  box-shadow: 0 0 16px 16px #47CF0417;
-}
-
-img {
-  vertical-align: middle;
-}
+/* * {box-sizing: border-box}
+.mySlides1, .mySlides2 {display: none}
+img {vertical-align: middle;} */
 
 /* Slideshow container */
-.slideshow-container{
-  z-index: 1;
-  animation: open 0.3s linear;
-  display: none; 
-  top:200px;
-  margin: 20px;
-  max-width: 100%;
+.slideshow-container {
   position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  max-width: 800px;
+  position: relative;
   
-  
- }
+}
 
-/* Next & previous buttons */
-.prev,
-.next {
+/* Next & previous buttons 
+.prev, .next {
   cursor: pointer;
   position: absolute;
-  top: 0%;
+  top: 50%;
   width: auto;
   padding: 16px;
-  background-color: rgba(0, 0, 0, 0.02);
+  margin-top: -22px;
   color: white;
   font-weight: bold;
   font-size: 18px;
@@ -267,92 +246,19 @@ img {
   user-select: none;
 }
 
-/* Position next, prev button */
-.prev {
-  padding-top: 50%;
-  height: 100%;
-  left: 0;
-  border-radius: 3px 0 0 3px;
-}
-
+/* Position the "next button" to the right 
 .next {
-  padding-top: 50%;
-  height: 100%;
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 
-/* On hover */
-.prev:hover,
-.next:hover {
-   background: rgba(255, 255, 255, 0.02);
- 
+/* On hover, add a grey background color 
+.prev:hover, .next:hover {
+  background-color: #f1f1f1;
+  color: black;
 }
+*/
 
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  position: relative;
-  cursor: pointer;
-  top:90px;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active,
-.dot:hover {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@keyframes fade {
-  from {
-    opacity: .4
-  }
-
-  to {
-    opacity: 1
-  }
-}
-
-/* On smaller screens, */
-@media only screen and (max-width: 300px) {
-
-  .prev,
-  .next,
-  .text {
-    font-size: 11px
-  }
-}
 .thumbnail{
   
   margin-top:130x; 
@@ -374,27 +280,17 @@ margin-top: 130px;
 .hide{
  display: none;
 }
-.cancel button{
-  color:white;
-  position: absolute;
-  right:0;
-  margin-top: -35px;
-  background: rgba(0, 0, 0, 0.01);
-  border:none;
-  font-size: 30px;
-  
-  
-}
-.blur{
+
+/* .blur{
   
  /*
   
   background: rgba(0, 0, 0, 0.1);
   filter: blur(8px);
-  -webkit-filter: blur(8px);
+  -webkit-filter: blur(8px);}
   */
   
-}
+
 @keyframes open{
   from{
     top:100%;
@@ -435,7 +331,8 @@ margin-top: 130px;
   --greenred:linear-gradient(40deg, #ff0080, #ff8c00 70%);;
   height: 100vh;
   color: black;
-  background-image: linear-gradient(165deg, white, #FFFFFF);
+  background-image: linear-gradient(to bottom,#7f6bb8,rgb(91, 173, 194), #7f6bb8);
+
 }
 .switch {
  
@@ -479,84 +376,117 @@ input:checked + .slider:before {
   background: var(--greenred);
   
 }
-/* scroll up button */
-.scrollup{
-  display: none;
-  z-index: 999;
-  margin-top: -200px;
-}
-  .scrollup a{
-    z-index: 999;
-    color: white;
-    transition: 2s;
-    position: absolute;
-    width: 100px;
-    margin: auto;
-    font-weight: bold;
-    
-    right:50%;
-    left:50%;
-    border: none;
-    background: greenyellow;
-    color: black;
-    text-decoration: none;
-    padding:5px 10px;
-    border-radius: 5px;
-    
-  }
- 
-@media screen and (min-width:610px) {
+@media screen and (max-width:610px) {
   .thumbnail{
     margin-left: 10px;
   }
   .thumbnail img{
 
+   border: 3px solid purple;
+
     width:170px;
   }
   
 }
-@media screen and (min-width:500px) {
+/* @media screen and (min-width:500px) {
   .thumbnail img{
     border: 2px solid green;
    
     width:140px;
   }
-}
-@media screen and (min-width:1200px) {
+} */
+@media screen and (max-width:700px) {
   
   .thumbnail img{
-    border: 2px solid purple;
-   
-    width:140px;
-  }
+    border: 3px solid red;
+    margin: 30px;
+   border: 3px solid purple;
+    
+   }
+ 
 }
 
-@media screen and (min-width:1200px) {
+@media screen and (min-width:1000px) {
   
   .thumbnail img{
-    border: 2px solid purple;
-   
-    width:200px;
-    height: 200px;
+  
+   margin: 30px;
+  border: none;
+    width:250px;
+    height: 250px;
   }
+
   .slideshow-container{
+
     z-index: 1;
     animation: open 0.3s linear;
-    display: none; 
+  
     top:20px;
     left: 22.5%;
     margin: 50px;
     max-width: 45%;
     position: absolute;
+    margin-top: 50px;
+
     
     
    }
-   .scrollup a{
-    display: none;
-   }
+
    .navbar .menu-list {
     
     max-width:40%;
    
   }
+  .cancel {
+    position:fixed;
+   
+    color: var(--greenred);
+    right: 25%;
+    font-size: 50px;
+  }
+  .cancel :hover{
+  color: red;
+  }
+} 
+.cancel {
+  position:fixed;
+ 
+  color: var(--greenred);
+  margin-right: -30px;
+  font-size: 50px;
+}
+.cancel :hover{
+color: red;
+}
+#slide-img1,#slide-img2{
+  display: none;
+
+}
+#slide-img31,#slide-img32{
+  display: none;
+
+}
+
+
+
+/* scroll up button */
+  .scrollup{
+  z-index: 999;
+  display: none;
+  
+
+}
+  .scrollup a{
+   text-decoration: none;
+   border: none;
+   color: white;
+   position: fixed;
+   left: 85%;
+   border-radius: 10px;
+   bottom: 10%;
+   padding: 10px;
+   background:var(--greenred);
+   font-weight: bold;
+    
+  }  
   
