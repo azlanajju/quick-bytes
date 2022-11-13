@@ -61,57 +61,10 @@ function topFunction() {
 //  }
 //  x[slideIndex[no]-1].style.display = "block";  
 // }
-//2021
-function click1(){
-  document.getElementById('slide-img1').style.display="block";
-  document.getElementById('background').classList="thumbnailblur";
-  document.getElementById('backgroundd').classList="thumbnailblur";
-  document.getElementById('scrollup-btn').style.display='block';
-}
-function clicked1(){
-  document.getElementById('slide-img1').style.display="none";
-  document.getElementById('background').classList="thumbnail";
-  document.getElementById('backgroundd').classList="thumbnail";
-  document.getElementById('scrollup-btn').style.display='none';
-}
-function click2(){
-  document.getElementById('slide-img2').style.display="block";
-  document.getElementById('background').classList="thumbnailblur";
-  document.getElementById('backgroundd').classList="thumbnailblur";
-  document.getElementById('scrollup-btn').style.display='block';
-  document.getElementById('scrollup-btn').style.display='block';
-}
-function clicked2(){
-  document.getElementById('slide-img2').style.display="none";
-  document.getElementById('background').classList="thumbnail";
-  document.getElementById('backgroundd').classList="thumbnail";
-  document.getElementById('scrollup-btn').style.display='none';
-}
-//2022
-function click31(){
-  document.getElementById('slide-img31').style.display="block";
-  document.getElementById('background').classList="thumbnailblur";
-  document.getElementById('backgroundd').classList="thumbnailblur";
-  document.getElementById('scrollup-btn').style.display='block';
 
-}
-function clicked31(){
-  document.getElementById('slide-img31').style.display="none";
-  document.getElementById('background').classList="thumbnail";
-  document.getElementById('backgroundd').classList="thumbnail";
-  document.getElementById('scrollup-btn').style.display='none';
-}
-function click32(){
-  document.getElementById('slide-img32').style.display="block";
-  document.getElementById('background').classList="thumbnailblur";
-  document.getElementById('backgroundd').classList="thumbnailblur";
-  document.getElementById('scrollup-btn').style.display='block';
 
-}
-function clicked32(){
-  document.getElementById('slide-img32').style.display="none";
-  document.getElementById('background').classList="thumbnail";
-  document.getElementById('backgroundd').classList="thumbnail";
-  document.getElementById('scrollup-btn').style.display='none';
-}
+
+
+
+
 

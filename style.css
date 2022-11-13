@@ -13,7 +13,11 @@
 
 body {
 
-  background: black;
+  --color1: red ;
+  --greenred:linear-gradient(40deg, #ff0080, #ff8c00 70%);;
+  height: 100vh;
+  color: black;
+  background-image: linear-gradient(to bottom,#7f6bb8,rgb(91, 173, 194), #7f6bb8);
   
 }
 
@@ -153,12 +157,13 @@ body.disabled {
 
 /* logo */
 .logo p {
+  z-index: 999;
   position: fixed;
   top:0;
   font-family: 'Oswald', sans-serif;
   font-size: 30px;
   margin-left: 20px;
-  color: var(--color1);
+  color: white;
   animation: 3s;
 }
 
